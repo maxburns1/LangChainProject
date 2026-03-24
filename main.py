@@ -7,9 +7,6 @@ from mypricing_tool import pricing_tool
 from myscheduling_tool import scheduling_tool
 from mycalendar_booking_tool import create_calendar_event_tool
 
-# later add:
-# from mycalendar_booking_tool import create_calendar_event_tool
-# from mycommunication_tool import communication_tool
 
 load_dotenv()
 
