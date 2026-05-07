@@ -73,13 +73,13 @@ def create_calendar_event_tool(
         end_dt = start_dt + timedelta(minutes=duration_minutes)
 
         event = {
-            "summary": f"Handyman Appointment - {customer_name}",
+            "summary": f"Gleam Detailing - {customer_name}",
             "location": location,
             "description": (
-                f"Customer: {customer_name}\n"
-                f"Service: {service_type}\n"
-                f"Notes: {notes}"
-            ),
+                  f"Customer: {customer_name}\n"
+                 f"Service: {service_type}\n"
+                 f"Notes: {notes}"
+             ),
             "start": {
                 "dateTime": start_dt.isoformat(),
                 "timeZone": TIMEZONE

@@ -1,0 +1,25 @@
+# Secrets and credentials — NEVER commit these
+.env
+service_account.json
+credentials.json
+token.pickle
+token_read.pickle
+token_write.pickle
+*.pickle
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db

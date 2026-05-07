@@ -2,11 +2,14 @@ from langchain.tools import tool
 from langchain_google_genai import ChatGoogleGenerativeAI
 from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
+from dotenv import load_dotenv
 import json
+
+load_dotenv()
 
 SHEETS_SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
 SERVICE_ACCOUNT_FILE = "service_account.json"
-SPREADSHEET_ID = "1wrItgWsgLmed3PlkaE8nuHEGBdgN20rXJAvDEvWWo1E"
+SPREADSHEET_ID = "1p6053Q2nysJfGXnDwKZxRJhLrGvAVAUaYPneFe1kJgI"
 RANGE_NAME = "PricingSheet!A1:G100"
 
 def get_sheets_service():
